@@ -4,82 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-
-    <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
-</head>
 <body>
-    <header>
-        <h1>Cameron Headlee</h1>
-        <nav>
-            <ul>
-                <li><a href="#Aboutme">About Me</a></li>
-                <li><a href="#myWork">My Work</a></li>
-                <li><a href="#myContact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Checkout My Work!</h2>
-        </section>
-    <section>
-        <h3 id="Aboutme">About Me</h3>
-        <p>I have have been coding for about two months. I like the fact that I can make my ideas come to life through code. Although, it has been the most challenging two months of my life I am dedicated to keep working and learning. I never saw coding as a path I would take in my future but I am glad I have found this passion. It was my brother who showed me the benefits of learning this skill. I am motivated to keep learning by the fact that the possibilities are endless in this field. It is truly up to me how far I want to go. The thought that by the end of this bootcamp I will be able to create anything I put my mind to through is amazing. I look forward to continuing my education in software development!</p>
-    </section>
-
-    <section>
-        <h3 id="myWork">Work</h3>
-<div class="row">
-    <div class="polaroid">
-        <p><a href="https://cameronheadlee.github.io/Password-Generator/" target="_blank">
-        <img src="https://ak.picdn.net/shutterstock/videos/28805074/thumb/1.jpg" alt="An image that displays front-end html">
-        </p></a>
-        <div class="container">
-            <div class="workCap">
-        <p>Front-end Work!</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="polaroid">
-        <p><a href="https://cameronheadlee.github.io/Work-Schedule-Planner/" target="_blank">
-        <img src="https://learntocodewith.me/wp-content/uploads/2019/01/PHP.jpg" alt="Image showing Back-end development">
-        </p></a>
-        <div class="container">
-            <div class="workCap">
-            <p>Back-end Work!</p>
-            </div>
-        </div>
-    </div>
+<header>
+    <nav class="bg-success navbar">
+            <span class="navbar-brand mb-0 h1">Cameron Headlee</span>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Aboutme">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Mywork">My Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Contact">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+</header>
     
-    <div class="polaroid">
-        <p><a href="https://cameronheadlee.github.io/Ear-Worm/" target="_blank">
-        <img src="https://miro.medium.com/max/700/1*Gw5XgziwzQlefn2pcY3Q7g.jpeg" alt="Image showing code to display first project">
-        </p></a>
-        <div class="container">
-            <div class="workCap">
-            <p>My First Project!</p>
+    <main class="bg-warning">
+    <section>
+            <h2 id="Aboutme">About Me</h3>
+            <p class="lead">I have have been coding for about two months. I like the fact that I can make my ideas come to life through code. Although, it has been the most challenging two months of my life I am dedicated to keep working and learning. I never saw coding as a path I would take in my future but I am glad I have found this passion. It was my brother who showed me the benefits of learning this skill. I am motivated to keep learning by the fact that the possibilities are endless in this field. It is truly up to me how far I want to go. The thought that by the end of this bootcamp I will be able to create anything I put my mind to through is amazing. I look forward to continuing my education in software development!</p>
+    </section>
+  
+        <h3 id="Mywork"> Checkout My Work! </h3>
+<section class="d-flex justify-content-around">
+    <div class="align-items-center">    
+            <div class="col">
+                <div class="card text-white bg-success" style="width: 18rem;">
+            <img src="https://learntocodewith.me/wp-content/uploads/2019/01/PHP.jpg" class="card-img-top" alt="Image that shows front-end code.">
+                <div class="card-body">
+                <h5 class="card-title">Password-Generator</h5>
+                <p class="card-text">The Password-Generator app was built using HTML, CSS, and JavaScript.</p>
+                 <a href="https://cameronheadlee.github.io/Password-Generator/" class="btn btn-primary" target="_blank">View App</a>
+                </div>
             </div>
         </div>
+    </div>
+
+
+
+    <div class="align-items-center">
+        <div class="col">
+            <div class="card text-white bg-success" style="width: 18rem;">
+            <img src="https://learntocodewith.me/wp-content/uploads/2019/01/PHP.jpg" class="card-img-top" alt="Image that shows front-end code.">
+            <div class="card-body">
+              <h5 class="card-title">Work-Schedule-Planner</h5>
+              <p class="card-text">This is a Work Schedule Planner built using HTML,CSS, JavaScript with momentjs.</p>
+              <a href="https://cameronheadlee.github.io/Work-Schedule-Planner/" class="btn btn-primary" target="_blank">View App</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="align-items-center">
+    <div class="col">
+        <div class="card text-white bg-success" style="width: 18rem;">
+            <img src="https://learntocodewith.me/wp-content/uploads/2019/01/PHP.jpg" class="card-img-top" alt="Image that shows front-end code.">
+            <div class="card-body">
+              <h5 class="card-title">Work-Schedule-Planner</h5>
+              <p class="card-text">This is a Work Schedule Planner built using HTML,CSS, JavaScript with momentjs.</p>
+              <a href="https://cameronheadlee.github.io/Work-Schedule-Planner/" class="btn btn-primary" target="_blank">View App</a>
+            </div>
+          </div>
     </div>
 </div>
-    </section>
 
+<div class="align-items-center">
+    <div class="col">
+        <div class="card text-white bg-success" style="width: 18rem;">
+            <img src="https://bn1305files.storage.live.com/y4mzdl2Qj44FrYsbn0UJWyUD3uLdvJE3LAhHnwjzsHip3mQz9EqWlaK9EFTsavyRamxOAjb09WxjpYBQqoepZ4-YCFZP4y9O3SGtGNmWMVM9Y2jvsClx5_zF4jSejr_J2VrpYf4Bw7By9gubzWwvAczo27genfJNUScu6ckkxNhI1Z97bGUKmTG00M10P4NUdv_?width=1920&height=1040&cropmode=none" class="card-img-top" alt="Image that shows screenshot of joinme application.">
+            <div class="card-body">
+              <h5 class="card-title">JoinMe</h5>
+              <p class="card-text">This is a Full-Stack app built to take in client info and store on a server using the MVC model.</p>
+              <a href="https://joinme-events.herokuapp.com/" class="btn btn-primary" target="_blank">View App</a>
+            </div>
+          </div>
+    </div>
+</div>
+
+</section>
     </main>
-        <footer>
-        <h4 id="myContact">Contact Me</h4>
-        <ul>
-            <li>614.517.7587</li>
-            <li><a href="https://www.linkedin.com/in/cameron-headlee-a20444215/" target="_blank">linkedin</a></li>
-            <li><a href="mailto:cameronheadlee6@gmail.com" target="_blank">Email</a></li>
-            <li><a href="https://github.com/CameronHeadlee?tab=repositories" target="_blank">Github</a></li>
-            <li><a href="https://www.youtube.com/channel/UCRh15JnvKfPnm9YMP_U6nxA" target="_blank">Youtube</a> </li>
-        </ul>
-        </footer>
-    
+    <footer>
+        <nav class="bg-success navbar">
+                <span class="navbar-brand mb-0 h1" id="Contact">Contact Me</span>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="www.linkedin.com/in/cameron-headlee" target="_blank">linkedin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="mailto:camHcodes11@gmail.com" target="_blank">Email</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="https://github.com/CameronHeadlee?tab=repositories" target="_blank">Github</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </html>
